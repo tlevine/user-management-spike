@@ -24,3 +24,34 @@ not to use them.
 * https://stormpath.com/
 
 ## Story
+Thomas and Tomasina work at a marketing firm that is consulting for a tank
+engine company. They are collaborating on a data analysis about the market
+for tank engines, and they are using DataPad. They want to figure out which
+cities they should tarket their marketing in.
+
+They pull data from a few sources.
+
+1. Internal spreadsheets
+2. Stock market, via Yahoo
+3. Twitter
+4. Large private datasets stored on S3
+5. Google Analytics
+
+The last three of these services require special credentials (API keys).
+
+Now let's focus on user accounts. This is not the only project that Thomas
+and Tomasina work on, they don't always collaborate, and it's nice to see
+who has done what. Thus, they want their own accounts, each with access to
+this project.
+
+They have a company-wide Twitter API key. For S3, they prefer to use separate
+accounts for each project for security reasons. They're using the tank engine
+company's Google Analytics credentials.
+
+Thomas or Tomasina will specify these credentials, and it's fine, and perhaps
+desirable, if the other of them can see the credential once it has been set.
+
+They want to be able to share a read-only version of the analysis quite
+publically within the two companies. In order that this analysis be safe to
+share publically, people viewing version of the analysis should not be able
+to see the third-party credentials.

@@ -57,7 +57,7 @@ share publically, people viewing version of the analysis should not be able
 to see the third-party credentials.
 
 ## Architecture ideas
-It seems like paralleling GitHub's model would work pretty well.
+It seems like following GitHub's model would work pretty well.
 
 People log in with their personal user account. Each account can be associated
 with any number of organizations. Projects belong to either a user or an

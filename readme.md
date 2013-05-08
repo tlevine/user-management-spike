@@ -55,3 +55,17 @@ They want to be able to share a read-only version of the analysis quite
 publically within the two companies. In order that this analysis be safe to
 share publically, people viewing version of the analysis should not be able
 to see the third-party credentials.
+
+## Architecture ideas
+It seems like paralleling GitHub's model would work pretty well.
+
+People log in with their personal user account. Each account can be associated
+with any number of organizations. Projects belong to either a user or an
+organization. Credentials belong to a user, organization or project.
+
+Handling collaborators on a personal project is a bit inelegant to me. It also
+makes things more complicated to use. Maybe multi-person projects automatically
+morph into organizations....
+
+I'd like to think more about this, but for now, I'm going to try implementing this
+architecture with the aforementioned services.
